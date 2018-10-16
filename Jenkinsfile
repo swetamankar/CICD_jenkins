@@ -2,7 +2,7 @@ node {
  try {
   
   stage('Preparation') {
-    git 'https://github.com/vgadikota/apigee_CI_config_proxy_sharedflow.git'
+    git 'https://github.com/swetamankar/CICD_jenkins.git'
    mvnHome = tool 'M3'
   }
 
