@@ -185,6 +185,20 @@
 					</execution>
 				</executions>
 			</plugin>
+		<!-- JAR -->
+            <plugin>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>org.jboss.marshalling.Version</mainClass>
+                        </manifest>
+                        <manifestEntries>
+                            <Multi-Release>true</Multi-Release>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
 
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
