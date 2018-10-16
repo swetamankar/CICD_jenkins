@@ -3,7 +3,7 @@ node {
   
   stage('Preparation') {
     git 'https://github.com/swetamankar/CICD_jenkins.git'
-   mvnHome = tool 'maven'
+   //mvnHome = tool 'maven'
   }
 
 try {
