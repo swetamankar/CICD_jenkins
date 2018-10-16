@@ -9,7 +9,7 @@ node {
 try {
   stage('Deploy to Test') {
    // Run the maven build
-   sh "'${mvnHome}/bin/mvn' -f $WORKSPACE/proxies/pom.xml install -Ptest -Dorg=swetamankar-eval -Dusername=sweta.mankar@fiserv.com -Dpassword=Noida@123 -Dapigee.config.options=update -X validate"
+   sh "mvn -f $WORKSPACE/proxies/pom.xml install -Ptest -Dorg=swetamankar-eval -Dusername=sweta.mankar@fiserv.com -Dpassword=Noida@123 -Dapigee.config.options=update -X validate"
    cucumber fileIncludePattern: '**/proxies/payment-v2/target/reports.json', sortingMethod: 'ALPHABETICAL'
    }
 }catch (e) {
@@ -23,7 +23,7 @@ try {
 try {
   stage('Deploy to Production') {
    // Run the maven build
-   sh "'${mvnHome}/bin/mvn' -f $WORKSPACE/proxies/pom.xml install -Pprod -Dorg=swetamankar-eval -Dusername=sweta.mankar@fiserv.com -Dpassword=Noida@123 -Dapigee.config.options=update -X validate"
+   sh "mvn -f $WORKSPACE/proxies/pom.xml install -Pprod -Dorg=swetamankar-eval -Dusername=sweta.mankar@fiserv.com -Dpassword=Noida@123 -Dapigee.config.options=update -X validate"
   }
   } catch (e) {
    //if tests fail, we can use a shell script which has 3 APIs to undeploy, delete current revision & deploy previous revision
