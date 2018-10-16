@@ -63,7 +63,7 @@
 		<profile>
 			<id>prod</id>
 			<properties>
-				<org>swetamankar-eval</org
+				<org>swetamankar-eval</org>
 				<apigee.profile>prod</apigee.profile>
 				<apigee.env>prod</apigee.env>
 				<apigee.hosturl>https://swetamankar-eval-test.apigee.net</apigee.hosturl>
