@@ -1,7 +1,7 @@
 {
     "configurations":[
         {
-            "name": "prod",
+            "name": "lab",
             "policies": [],
             "proxies": [],
             "targets": []
