@@ -61,12 +61,12 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>prod</id>
+			<id>lab</id>
 			<properties>
-				<org>swetamankar-eval</org>
-				<apigee.profile>prod</apigee.profile>
-				<apigee.env>prod</apigee.env>
-				<apigee.hosturl>https://swetamankar-eval-test.apigee.net</apigee.hosturl>
+				<org>fiserv</org>
+				<apigee.profile>lab</apigee.profile>
+				<apigee.env>lab</apigee.env>
+				<apigee.hosturl>${hosturl}</apigee.hosturl>
 				<apigee.apiversion>v1</apigee.apiversion>
 				<apigee.org>${org}</apigee.org>
 				<apigee.username>${username}</apigee.username>
